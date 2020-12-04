@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>day</title>
+<meta name="generator" content="Bluefish 2.2.9" >
+<meta name="author" content="Rob" >
+<meta name="date" content="2018-05-01T11:13:22+0200" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<link href="Spiel.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="effect" id="wrapper2">
+<div id="menuBar">
+<nav>
+<ul class="menubar">
+	<li class="menuButton">
+		<a href="nexthint" class="menuButton" style="text-decoration: none; color: black;">
+		Startseite</a></li>
+	<li class="menuButton">
+		<a href="Tabelle" class="menuButton" style="text-decoration: none; color: black;">
+		Tabelle</a></li>
+	<li class="menuButton">
+		<a href="Geburtstagslied" class="menuButton"style="text-decoration: none; color: black;">
+		Geburtstagslied</a></li>
+	<li class="menuButton">
+		<a href="Formula" class="menuButton" style="text-decoration: none; color: black;">
+		<strong>coole Formel</strong></a></li>
+	<li class="menuButton">
+		<a href="Wiese" class="menuButton" style="text-decoration: none; color: black;">
+		Eine Wiese</a></li>
+	<li class="menuButton">
+		<a href="Motivation" style="text-decoration: none; color: black;">
+		Vergleich</a></li>
+	</ul>
+	</div>
+		</nav>
+<div align="center">
+<h3>
+<span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e4c7a30f3dc20c06057413aed7c89b7e1c67aeb" 
+class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:40.064ex; height:5.343ex;" 
+alt="{\displaystyle {1 \over 2}&lt;\left\lfloor \mathrm {mod} \left(\left\lfloor {y \over 17}\right\rfloor 2^{-17\lfloor x\rfloor -\mathrm {mod} (\lfloor y\rfloor ,17)},2\right)\right\rfloor }" />
+</span>
+<p>mit</p>
+</h3>
+<h3>
+k=<br><br>
+	6823803484412043491590<br>
+	1362128051281103157006<br>
+	1601163097088551140738<br>
+	6196358969412234289216<br>
+	3204305872156519184426<br>
+	7534583537617047639261<br>
+	6214776399403468845143<br>
+	1512515671652839753985<br>
+	3149109208342135906019<br>
+	6263780811028950205000<br>
+	9250660839411602628122<br>
+	0527449227981513063251<br>
+	9627057394158764855208<br>
+	4642558963064300103879<br>
+	5156519815922527953081<br>
+	4608292365542068665092<br>
+	1446966304929911692616<br>
+	8354486431797816044461<br>
+	6429330210113505045494<br>
+	3377757663598506971922<br>
+	08596992<br>
+</h3>
+<p><strong>=</strong></p>
+<div class="form-style-2">
+<form>
+<input type="text" class="input-field" placeholder="eine Zahl" name="answer" onkeypress="return searchKeyPress(event);">
+ <br>
+<input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
+</form>
+</div>
+<p id="richtig" style="visibility: hidden;">Sehr gut! Damit hast du auch den Mathematikteil geschafft.<br>
+	Solche Formeln zum Visualisieren von Zahlen, sind echt interessant. Deshalb ist das Wort "visualisieren" auch Teil deiner Lösung.
+Nun zum nächsten Teil: 56 Jahre sind eine ziemlich lange Zeit. In dieser Zeit kann man so einiges erleben.
+<a href="http://www.museumofconceptualart.com/accomplished/" target="_blank">Hier</a> kannst du zum Beispiel sehen, was andere mit 56 bereits
+ erreicht haben.
+</p>
+<script type="text/javascript">
+function searchKeyPress(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('Knopf').click();
+        return false;
+    }
+    return true;
+}
+
+</script>
+
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.answer.value == "56")
+  {
+	document.getElementById('richtig').style="visibility:visible";
+  }
+  else if (form.answer.value == "56!")
+  {
+  document.getElementById('richtig').style="visibility:visible";
+  }
+  else if (form.answer.value == "56 ")
+  {
+  document.getElementById('richtig').style="visibility:visible";
+  }
+ else
+ {
+   alert("Versuchs noch mal!")
+  }
+}
+</script>
+<br>
+</div>
+<footer>Designed by RobInc</footer>
+	</div>
+</body>
+</html>

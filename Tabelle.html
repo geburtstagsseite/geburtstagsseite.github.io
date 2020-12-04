@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birth</title>
+<meta name="author" content="Rob" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<link href="Spiel.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+function searchKeyPress(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('Knopf').click();
+        return false;
+    }
+    return true;
+}
+
+</script>
+ <script language="javascript">
+function check(form)
+{
+ 
+ if(form.answer1.value == "Hip" && form.answer2.value == "Hip" && form.answer3.value == "Hurra")
+  {
+	document.getElementById('richtig').style="visibility:visible";
+  }
+  else if (form.answer1.value == "Hip" && form.answer2.value == "Hip" && form.answer3.value == "Hurra!") 
+  {
+  document.getElementById('richtig').style="visibility:visible";
+  }
+  else if (form.answer1.value == "Hip " && form.answer2.value == "Hip " && form.answer3.value == "Hurra!") 
+  {
+  document.getElementById('richtig').style="visibility:visible";
+  }
+   else if (form.answer1.value == "hip" && form.answer2.value == "hip" && form.answer3.value == "hurra") 
+  {
+  document.getElementById('richtig').style="visibility:visible";
+  }
+ else
+ {
+   alert("Versuchs noch mal!")
+  }
+}
+</script>
+</head>
+<body>
+<div class="effect" id="wrapper2">
+<div id="menuBar">
+<nav>
+<ul class="menubar">
+	<li class="menuButton">
+		<a href="nexthint.html" class="menuButton" style="text-decoration: none; color: black;">
+		Startseite</a></li>
+	<li class="menuButton">
+		<a href="Tabelle.html" class="menuButton" style="text-decoration: none; color: black;">
+		<strong>Tabelle</strong></a></li>
+	<li class="menuButton">
+		<a href="Geburtstagslied.html" class="menuButton"style="text-decoration: none; color: black;">
+		Geburtstagslied</a></li>
+	<li class="menuButton">
+		<a href="Formula.html" class="menuButton" style="text-decoration: none; color: black;">
+		Coole Formel</a></li>
+	<li class="menuButton">
+		<a href="Wiese.html" class="menuButton" style="text-decoration: none; color: black;">
+		Eine Wiese</a></li>
+	<li class="menuButton">
+		<a href="Motivation.html" class="menuButton" style="text-decoration: none; color: black;">
+		Vergleich</a></li>
+	</ul>
+	</nav>
+	</div>
+<p>Ist schon erstaunlich, was man alles mit Tabellen anstellen kann.
+Hier ist eine extra für dich:<br>
+<br>
+<a href="Tabelle.xlsx">Download</a>	
+</p>
+<div align="center">
+<div class="form-style-2">
+<form>
+<label>Und was sagt dir diese Tabelle?</label>
+<br>
+<table cellpadding="2%">
+<td><input type="text" class="input-field" name="answer1"></td> <td><strong>-</strong></td>
+<td><input type="text" class="input-field" name="answer2"></td> <td><strong>-</strong></td>
+<td><input type="text" class="input-field" name="answer3" onkeypress="return searchKeyPress(event);"></td>
+</table>
+<br>
+<input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
+</form>
+</div>
+</div>
+<p id="richtig">Gut gemacht!
+ So und jetzt geht es gleich mit Zahlen weiter. Besser gesagt mit einer Formel und einer Zahl.
+ Tuppers selbstreferentielle Formel ist nämlich etwas ganz besonderes. Setzt man in die Formel eine bestimmte Zahl 
+ ein und zeichnet den Graphen, so erhält man als Graphen wieder die Formel selbst. Doch nicht nur das. 
+ Man kann mit dieser Formel und den richtigen Zahlen so ziemlich alles zeichnen, was in ein 17 X 106 - Feld passt.
+ <a href="https://mtcliatt.github.io/Everything/" target="_blank">Auf dieser Website</a> kannst du den Graphen zu einer Zahl zeichnen...
+ </p>	
+ 
+<footer>Designed by RobInc</footer>	
+<br>	
+			</div>
+</body>
+</html>

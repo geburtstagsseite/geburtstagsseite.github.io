@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>py</title>
+    <link href="Spiel.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="effect" id="wrapper2">
+    <div id="menuBar">
+        <nav>
+            <ul class="menubar">
+                <li class="menuButton">
+                    <a href="Startseite.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Startseite</a></li>
+                <li class="menuButton">
+                    <a href="spreadsheet.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Tabelle</a></li>
+                <li class="menuButton">
+                    <a href="song.html" class="menuButton" style="text-decoration: none; color: black;">
+                        <strong>Geburtstagslied</strong></a></li>
+                <li class="menuButton">
+                    <a href="Formel.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Coole Formel</a></li>
+                <li class="menuButton">
+                    <a href="Bild.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Eine Wiese</a></li>
+                <li class="menuButton">
+                    <a href="Vergleich.html" style="text-decoration: none; color: black;">
+                        Vergleich</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form-style-6">
+        <h1>Erste Frage: Wie lautet der Titel deines Geburtstagsliedes?</h1>
+        <form>
+            Titel: <input type="text" name="nname" autofocus="" onkeypress="return searchKeyPress(event);"><br>
+            <input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
+        </form>
+        <br>
+    </div>
+    <p id="richtig" style="visibility: hidden;">Richtig! Sehr besinnliches Lied, oder?
+        Du solltest dir auf jeden Fall "Life" für später merken!
+        Nun zum nächster Tipp: Fotos sind nichts anderes als sehr große Tabellen.
+        Man muss nur weit genug hinaus zoomen, dann wird aus einer Tabelle ein Bild.</p>
+
+
+    <script type="text/javascript">
+        function searchKeyPress(e)
+        {
+            e = e || window.event;
+            if (e.keyCode === 13)
+            {
+                document.getElementById('Knopf').click();
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+    <script language="javascript">
+        function check(form)
+        {
+            if(form.nname.value === "all my life")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.nname.value === "All my life")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.nname.value === "All My Life") {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else
+            {
+                alert("Nope! Versuchs noch mal!")
+            }
+        }
+    </script>
+    <br>
+    <footer>Designed by RobInc</footer>
+    <br>
+</div>
+
+</body>
+</html>

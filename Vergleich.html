@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>to</title>
+    <link href="Spiel.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="effect" id="wrapper2">
+    <div id="menuBar">
+        <nav>
+            <ul class="menubar">
+                <li class="menuButton">
+                    <a href="Startseite.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Startseite</a></li>
+                <li class="menuButton">
+                    <a href="spreadsheet.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Tabelle</a></li>
+                <li class="menuButton">
+                    <a href="song.html" class="menuButton"style="text-decoration: none; color: black;">
+                        Geburtstagslied</a></li>
+                <li class="menuButton">
+                    <a href="Formel.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Coole Formel</a></li>
+                <li class="menuButton">
+                    <a href="Bild.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Eine Wiese</a></li>
+                <li class="menuButton">
+                    <a href="Vergleich.html" style="text-decoration: none; color: black;">
+                        <strong>Vergleich</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form-style-6">
+        <h1>Wie hieß der Psychologe der mit 22 bereits seinen PhD hatte?</h1>
+        <form>
+            Vorname:  <input type="text" name="vname" autofocus=""><br>
+            Nachname: <input type="text" name="nname" onkeypress="return searchKeyPress(event);"><br>
+            <input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
+        </form>
+    </div>
+    <p id="richtig"> Richtig! War doch interessant zu sehen, womit andere Leute sich so in ihrem Leben beschäftigt hatten.
+        Daher ist "Philosoph" auch wichtig für dein Lösungswort<br>
+        P.s.: Falls du schauen willst, was du bisher alles in deinem Leben erreicht hast:
+        <a href="http://neal.fun/life-checklist/">Hier</a> findest du eine Life-Checklist.
+        (Nur falls du Lust hast. Hat nichts mehr mit dem Spiel zu tun.)<br>
+        Nun bekommst du noch den Dechiffrierer für die letzte Seite!
+        <img src="Dechiffre.png" width="600" height="500" alt="" align="middle">
+    </p>
+    <script type="text/javascript">
+        function searchKeyPress(e)
+        {
+            e = e || window.event;
+            if (e.keyCode == 13)
+            {
+                document.getElementById('Knopf').click();
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+    <script language="javascript">
+        function check(form)
+        {
+            if(form.vname.value == "Jean" && form.nname.value == "Piaget")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.vname.value == "jean" && form.nname.value == "piaget")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.vname.value == "Jean " && form.nname.value == "piaget")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.vname.value == "Jean " && form.nname.value == "Piaget")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else
+            {
+                alert("Versuchs noch mal!")
+            }
+        }
+    </script>
+    <footer>Designed by RobInc</footer><br>
+</div>
+</body>
+</html>
