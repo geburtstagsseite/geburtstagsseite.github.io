@@ -15,12 +15,12 @@ animation-iteration-count: infinite;
 @keyframes confetti
 {
 0%   {top:0px;}
-100% {top:600px;}
+100% {top:700px;}
 }
 @-webkit-keyframes confetti /* Safari and Chrome */
 {
 0%   {top:0px;}
-100% {top:600px;}
+100% {top:700px;}
 }
 
 .confetti1 .confetti12 {
