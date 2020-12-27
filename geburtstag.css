@@ -107,13 +107,6 @@ animation-iteration-count: infinite;
 	margin-left: 850px;
 }
 
-
-#Titel {
-	border: 2px;
-	border-color: #A52A2A;
-	font-size: 80px;
-	font-style: italic;
-}
 .effect
 {
     position:relative;
@@ -146,16 +139,15 @@ animation-iteration-count: infinite;
 	border-color: blanchedalmond;
 	background-color: #DAE6EA;
 	}
-	
-#Übersetzung {
-	color: navy;
-	text-align: center;
-	font-size: 80px; 
-	font-style: italic; 
-}
 
+.Titel {
+	border: 2px;
+	border-color: #A52A2A;
+	font-size: 80px;
+	font-style: italic;
+}
 	
-#Überschrift {
+.Überschrift {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
@@ -165,7 +157,14 @@ animation-iteration-count: infinite;
 	font-style: italic;
 }
 
-#Sprache {
+.Übersetzung {
+	color: navy;
+	text-align: center;
+	font-size: 80px;
+	font-style: italic;
+}
+
+.Sprache {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
@@ -183,7 +182,7 @@ animation-iteration-count: infinite;
 	font-style: italic;
 }
 
-#Zahlen {
+.Zahlen {
 	color: navy;
 	font-size: 40px; 
 	font-style: italic;
@@ -200,7 +199,7 @@ animation-iteration-count: infinite;
 	background-color: #DAE6EA;
 }
 
-#Überschrift2 {
+.Überschrift2 {
 	background-color: whitesmoke;	
 	color: navy;
 	font-size: 50px; 
@@ -208,12 +207,12 @@ animation-iteration-count: infinite;
 	border-radius: 4px;
 	text-align: center;
 }
-#Bilder {
+.Bilder {
 	margin-left: 200px;
 	width: 800px;
 }
 
-#Zahlen2 {
+.Zahlen2 {
 	color: navy;
 	font-size: 40px; 
 	font-style: italic;

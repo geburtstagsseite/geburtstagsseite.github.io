@@ -32,13 +32,6 @@ body {
 background-image: url("old_wood_deck.jpg");
  }
 
-#Leaderboard{
-    margin: auto;
-    text-align: center;
-    border-color: white;
-    color: white;
-    font-size: xx-large;
-}
 #wrapper2 {
 	width: 955px;
 	margin: auto;
