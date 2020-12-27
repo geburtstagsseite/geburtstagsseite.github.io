@@ -29,7 +29,7 @@ p
     transform:skew(8deg) rotate(3deg);
 }
 body {
-background-image: url("old_wood_deck.jpg");
+background-image: url("pictures/old_wood_deck.jpg");
  }
 
 #wrapper2 {
