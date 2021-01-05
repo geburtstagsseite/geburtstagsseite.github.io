@@ -22,7 +22,7 @@ function searchKeyPress(e)
 
 <script type="text/javascript">
 
-         var minuten = 44;
+         var minuten = 59;
 
          var sekunden = 59;
 
@@ -30,7 +30,7 @@ function searchKeyPress(e)
          var tmp2 = setInterval(function(){ Timer_sek() }, 1000);
 
          function Timer_min() {
-             if(minuten === 0)
+             if(minuten == 0)
                  alert("Deine Zeit ist leider abgelaufen!");
              minuten -= 1;
          }
