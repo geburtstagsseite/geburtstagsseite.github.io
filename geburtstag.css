@@ -70,21 +70,18 @@ animation-iteration-count: infinite;
 		margin-left: 550px;
 }
 .confetti11 {
-	margin-left: 350;
+	margin-left: 350px;
 	animation-delay:2s;
 	-webkit-animation-delay:2s;
 }
 
-.confetti12 {
-	margin-left: 350;
-}
 .confetti13 {
-	margin-left: 620;
+	margin-left: 620px;
 	animation-delay:4s;
 	-webkit-animation-delay:4s;
 }
 .confetti14 {
-	margin-left: 570;
+	margin-left: 570px;
 }
 
 .confetti15 {
