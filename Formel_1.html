@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>day</title>
+    <link href="Spiel.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="effect" id="wrapper2">
+    <div id="menuBar">
+        <nav>
+            <ul class="menubar">
+                <li class="menuButton">
+                    <a href="Startseite_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Startseite</a></li>
+                <li class="menuButton">
+                    <a href="spreadsheet_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Tabelle</a></li>
+                <li class="menuButton">
+                    <a href="song_1.html" class="menuButton"style="text-decoration: none; color: black;">
+                        Geburtstagslied</a></li>
+                <li class="menuButton">
+                    <a href="Formel_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        <strong>coole Formel</strong></a></li>
+                <li class="menuButton">
+                    <a href="Bild_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Eine Wiese</a></li>
+                <li class="menuButton">
+                    <a href="Vergleich_1.html" style="text-decoration: none; color: black;">
+                        Vergleich</a></li>
+            </ul>
+    </nav>
+    </div>
+    <div align="center">
+        <h3>
+<span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e4c7a30f3dc20c06057413aed7c89b7e1c67aeb"
+           class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:40.064ex; height:5.343ex;"
+           alt="{\displaystyle {1 \over 2}&lt;\left\lfloor \mathrm {mod} \left(\left\lfloor {y \over 17}\right\rfloor 2^{-17\lfloor x\rfloor -\mathrm {mod} (\lfloor y\rfloor ,17)},2\right)\right\rfloor }" />
+</span>
+            <p>mit</p>
+        </h3>
+        <h3>
+            k=<br><br>
+            2111885339533298198836810717<br>
+            1194164097846874123840242708<br>
+            9539965725876732754080494426<br>
+            2636454546884569127192995011<br>
+            6947718799461061954963357082<br>
+            6196222759552524940190212468<br>
+            8746408855059238255140152597<br>
+            3532078778169656439205039951<br>
+            1308972121109744973858802719<br>
+            7436444479862835472413493380<br>
+            8952471578995365739243663216<br>
+            1228064551365390389569493181<br>
+            4478397968098000276187652449<br>
+            1114116149232431763248450417<br>
+            8898157655613914944282031365<br>
+            1516601993872741101600751774<br>
+            7828781174375530590480891904<br>
+        </h3>
+        <p><strong>=</strong></p>
+        <div class="form-style-2">
+            <form>
+                <input type="text" class="input-field" placeholder="eine Zahl" name="answer" onkeypress="return searchKeyPress(event);">
+                <br>
+                <input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
+            </form>
+        </div>
+        <p id="richtig" style="visibility: hidden;">Sehr gut! Damit hast du auch den Mathematikteil geschafft. <br>
+            Das ist auf jeden Fall eine sehr "coole Formel" oder? Merk dir am besten diesen Ausruck :)
+            Nun zum nächsten Teil: 26 Jahre sind eine ziemlich lange Zeit. In dieser Zeit kann man so einiges erleben.
+            <a href="http://www.museumofconceptualart.com/accomplished/" target="_blank">Hier</a> kannst du zum Beispiel sehen, was andere mit 26 bereits
+            erreicht haben.
+        </p>
+        <script type="text/javascript">
+            function searchKeyPress(e)
+            {
+                e = e || window.event;
+                if (e.keyCode == 13)
+                {
+                    document.getElementById('Knopf').click();
+                    return false;
+                }
+                return true;
+            }
+
+        </script>
+
+        <script language="javascript">
+            function check(form)
+            {
+
+                if(form.answer.value == "26")
+                {
+                    document.getElementById('richtig').style="visibility:visible";
+                }
+                else if (form.answer.value == "26!")
+                {
+                    document.getElementById('richtig').style="visibility:visible";
+                }
+                else if (form.answer.value == "26! ")
+                {
+                    document.getElementById('richtig').style="visibility:visible";
+                }
+                else
+                {
+                    alert("Versuchs noch mal!")
+                }
+            }
+        </script>
+        <br>
+    </div>
+    <footer>Designed by RobInc</footer>
+</div>
+</body>
+</html>

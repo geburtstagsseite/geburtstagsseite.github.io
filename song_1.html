@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>py</title>
+    <link href="Spiel.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="effect" id="wrapper2">
+    <div id="menuBar">
+        <nav>
+            <ul class="menubar">
+                <li class="menuButton">
+                    <a href="Startseite_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Startseite</a></li>
+                <li class="menuButton">
+                    <a href="spreadsheet_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Tabelle</a></li>
+                <li class="menuButton">
+                    <a href="song_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        <strong>Geburtstagslied</strong></a></li>
+                <li class="menuButton">
+                    <a href="Formel_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Coole Formel</a></li>
+                <li class="menuButton">
+                    <a href="Bild_1.html" class="menuButton" style="text-decoration: none; color: black;">
+                        Eine Wiese</a></li>
+                <li class="menuButton">
+                    <a href="Vergleich_1.html" style="text-decoration: none; color: black;">
+                        Vergleich</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form-style-6">
+        <h1>Erste Frage: Wie heißt der Interpret deines Geburtstagsliedes? (Rubrik: alternative song)</h1>
+        <form>
+            Titel: <input type="text" name="nname" autofocus="" onkeypress="return searchKeyPress(event);"><br>
+            <input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
+        </form>
+        <br>
+    </div>
+    <p id="richtig" style="visibility: hidden;">Richtig! <br>
+        Und, fühlst du dich schon etwas alt? Ist schon länger her, dass ich was von Green Day gehört habe und dem Video merkt man auch schon sein Alter an...
+        Jedenfalls solltest du dir "song" für später merken.
+        Nun zum nächster Tipp: Erinnerst du dich noch an unser erstes Seminar?
+        Dort zeigte ich dir, dass Fotos nichts anderes als sehr große Tabellen sind.
+        Man muss nur weit genug hinaus zoomen, dann wird aus einer Tabelle ein Bild.</p>
+
+
+    <script type="text/javascript">
+        function searchKeyPress(e)
+        {
+            e = e || window.event;
+            if (e.keyCode === 13)
+            {
+                document.getElementById('Knopf').click();
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+    <script language="javascript">
+        function check(form)
+        {
+            if(form.nname.value === "Green Day")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.nname.value === "green day")
+            {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else if(form.nname.value === "Green Day") {
+                document.getElementById('richtig').style="visibility:visible";
+            }
+            else
+            {
+                alert("Nope! Versuchs noch mal!")
+            }
+        }
+    </script>
+    <br>
+    <footer>Designed by RobInc</footer>
+    <br>
+</div>
+
+</body>
+</html>
