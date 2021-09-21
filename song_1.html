@@ -32,7 +32,7 @@
         </nav>
     </div>
     <div class="form-style-6">
-        <h1>Erste Frage: Wie heißt der Interpret deines Geburtstagsliedes? (Rubrik: alternative song)</h1>
+        <h1>Erste Frage: Wie heißt der Titel deines Geburtstagsliedes? (Rubrik: alternative song)</h1>
         <form>
             Titel: <input type="text" name="nname" autofocus="" onkeypress="return searchKeyPress(event);"><br>
             <input type="button" value="Antwort"  onclick="check(this.form)" id="Knopf">
@@ -40,10 +40,9 @@
         <br>
     </div>
     <p id="richtig" style="visibility: hidden;">Richtig! <br>
-        Und, fühlst du dich schon etwas alt? Ist schon länger her, dass ich was von Green Day gehört habe und dem Video merkt man auch schon sein Alter an...
-        Jedenfalls solltest du dir "song" für später merken.
-        Nun zum nächster Tipp: Erinnerst du dich noch an unser erstes Seminar?
-        Dort zeigte ich dir, dass Fotos nichts anderes als sehr große Tabellen sind.
+        Und, fühlst du dich schon etwas alt? Ist schon länger her, dass ich so eine Musik gehört habe und dem Video merkt man auch schon sein Alter an...
+        Jedenfalls solltest du dir "" für später merken.
+        Nun zum nächster Tipp: Wusstest du eigentlich, dass Fotos nichts anderes als sehr große Tabellen sind.
         Man muss nur weit genug hinaus zoomen, dann wird aus einer Tabelle ein Bild.</p>
 
 
@@ -64,15 +63,15 @@
     <script language="javascript">
         function check(form)
         {
-            if(form.nname.value === "Green Day")
+            if(form.nname.value === "Comedown")
             {
                 document.getElementById('richtig').style="visibility:visible";
             }
-            else if(form.nname.value === "green day")
+            else if(form.nname.value === "comedown")
             {
                 document.getElementById('richtig').style="visibility:visible";
             }
-            else if(form.nname.value === "Green Day") {
+            else if(form.nname.value === "Comedown ") {
                 document.getElementById('richtig').style="visibility:visible";
             }
             else
