@@ -36,14 +36,23 @@
         genauer gesagt um deinen Geburtstag!</h2>
     <p>Um das Spiel beenden zu können, musst du nur alle Fragen richtig beantworten.
         Für jede richtige Antwort bekommst du einen weiteren Tipp und einen Hinweis auf dein letztes Lösungswort.
-        Um beginnen zu können, schreibe einfach eine Email an <strong>raetsel.spass3141@gmail.com </strong> <br>
-        Dort erhälst du den ersten Tipp von mir.
+        Um beginnen zu können, schreibe einfach eine Email mit "Ich bin bereit!" an <strong>raetsel.spass3141@gmail.com </strong> <br>
+        Dort erhälst du den ersten Tipp von mir. * <br>
         Viel Spaß noch beim Spielen! ;)
 <br>
-        ~Robin~
+        ~Robin~<br>
+        <div id="help"></div>
     </p>
     <br>
-    <footer>Designed by RobInc</footer>
+    <footer>*Vergiss nicht, deine Emails zu aktualisieren. Wenn du nach einiger Zeit trotzdem keine Antwort erhältst, klicke <a onclick="get_alert()"><strong>hier.</strong></a> <br>
+        <br>
+        Designed by RobInc</footer>
 </div>
+<script language="javascript">
+    function get_alert(){
+
+        document.getElementById("help").innerHTML ="Schade, dass es nicht funktioniert hat. Hier also der Tipp: Auf dieser <a href=\"https://www.birthdayjams.com/us-alternative/\" target=\"_blank\"> Website </a> kannst du herausfinden, welches Song an deinem Geburtstag auf Platz 1 in den Charts war."
+    }
+</script>
 </body>
 </html>
