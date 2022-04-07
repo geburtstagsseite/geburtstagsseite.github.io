@@ -336,4 +336,6 @@ footer {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+    flex: 25%;
+    width: 75%;
 }
